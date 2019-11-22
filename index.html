@@ -46,7 +46,7 @@ $('#networkInfo').prepend("Offline<br />");
 }
 function getConnectionTypeStr() {
 //get the network state
-var networkState = navigator.network.connection.type;
+var networkState = navigator.connection.type;
 //return a string representing the current network state
 return states[networkState];
 }
